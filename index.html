@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>10 Sec Maths Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 game">
+          <h2>10 Sec Maths Game</h2>
+          <h3 id="time-left">10</h3>
+          <p>second left</p>
+          <h1 id="equation"></h1>
+          <input id="user-input" type="number" />
+          <div class="col-xs-12">
+            <input type="checkbox" name="sum" id="sum" value="true" checked/>
+            <label for="sum">+</label>
+            <input type="checkbox" name="subtraction" id="subtraction" value="false" />
+            <label for="subtraction">-</label>
+            <input type="checkbox" name="multiplication" id="multiplication" value="false" />
+            <label for="multiplication">x</label>
+            <input type="checkbox" name="division" id="division" value="false" />
+            <label for="division">/</label>
+            <br/><br/> 
+            <label for="number-limit">Number Limit</label>
+            <h4 id="value">10</h4>
+            <input id="limitInput" type="range" min="10" max="50" step="5">
+          </div>
+
+          <div class="scores">
+            <p>Current Score: <span id="score"></span></p>
+            <p>High Score: <span id="highScore"></span></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
