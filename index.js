@@ -116,6 +116,12 @@ $(document).ready(function(){
             break;
         case 3:
             transaction = "/";
+
+            while(num1%num2 !== 0){
+              console.log(num1, num2);
+              num2 = randomNumberGenerator(Number(digit.value));
+            }
+
             question.answer = num1 / num2;
             question.equation = String(num1) + transaction + String(num2);
             break;              
